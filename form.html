@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            min-height: 100vh;
+            max-width: 80vw;
+            margin: 0 auto;
+        }
+        header {
+            background-color: #000458;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: x-large;
+        }
+        nav {
+            background-color: #1800A8;
+            padding: 30px;
+            text-align: center;
+            word-spacing: 90px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: larger;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        .container p {
+            margin-top: 50px;
+            margin-left: 14vw;
+            font-size: larger;
+        }
+        .container1 {
+            width: 60%;
+            height: 850px;
+            margin: 0 auto;
+            background-color: #000458;
+            color: white;
+            padding: 50px;
+            border-radius: 50px;
+        }
+        .inputValue {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .inputValue label {
+            flex: 1;
+            margin-left: 40px;
+            font-size: xx-large;
+        }
+        .inputValue select,
+        .inputValue input{
+            flex: 1.5;
+            padding: 30px;
+            border: 1px solid #ccc;
+            margin-right: 40px;
+            border-radius: 5px;
+        }
+        .description-title {
+            margin-left: 40px;
+            font-size: xx-large;
+        }
+        .description textarea {
+            padding: 30px;
+            margin-right: 40px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 90%;
+            margin: 10px 40px;
+            height: 270px;
+        }
+        .container3 {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .container3 input {
+            background-color: #1800A8;
+            color: #fff;
+            padding: 18px 70px;
+            border-radius: 50px;
+            border: none;
+            font-size: x-large;
+            cursor: pointer;
+        } 
+        .container3 input:hover {
+            background-color: #000458;
+        }
+        footer {
+            background-color: #1800A8;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 80%;
+        } 
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Blog</h1>
+    </header>
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#">EDUCATION</a>
+        <a href="#">SPORTS</a>
+        <a href="#">ENTERTAINMENT</a>
+        <a href="#">MISC</a>
+    </nav>
+    <div class="container">
+        <p>Fill the form to create a blog</p>
+        <form>
+            <div class="container1">
+                <div class="inputValue">
+                    <label for="title">Blog Title:</label>
+                    <input type="text" id="title" name="title" placeholder="Enter the title of a blog">
+                </div>
+                <div class="inputValue">
+                    <label for="category">Blog Category:</label>
+                    <select id="category" name="category" placeholder="Select a category" required>
+                        <option value="Education">EDUCATION</option>
+                        <option value="Sports">SPORTS</option>
+                        <option value="Entertainment">ENTERTAINMENT</option>
+                        <option value="Misc">MISC</option>
+                    </select>
+                </div>
+                <div class="inputValue">
+                    <label for="date">Date of Creation:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <br>
+                <div class="container2">
+                    <div class="description">
+                        <div class="description-title">Description</div>
+                        <br><br>
+                        <textarea class="description" placeholder="Add Description"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="container3">
+                <input type="submit" value="Create">
+            </div>
+        </form>
+    </div>
+    <footer>
+        &copy; 2024 My Blog
+    </footer>
+</body>
+</html>
